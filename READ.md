@@ -1,19 +1,51 @@
-BBCode Signature Extension
+BBCode Pastebin Embed Extension
 
-An alternative signature for flarum.
+Embeds the paste into the Flarum post. Respects the exposure and expiration settings for the paste. A notice is provided if the paste expires (or is deleted) or if the paste is private. Displays the proper formatting when syntax highlighting is used. 
+
 
 Install:
 
-`composer require oe800/flarum-ext-bbcode-signature`
+`composer require oe800/flarum-ext-bbcode-pastebin`
+
 
 Usage:
 
-`[sig]UrlLink, ImgUrl, HeaderTxt, More text[/sig]`
+For small pastes (about 7 lines)
 
-Example:
-[sig]https://keys-daggers.org, https://i.imgur.com/Ca9FAqzm.png, 0E800, It gives you Powa![/sig]
-
-![alt text](http://i.imgur.com/rEYUs3X.gif "Signature Extension")
+`[pastebin]{Pastecode}[/pastebin]`
 
 
-More styles coming soon!
+For medium pastes (about 30 lines)
+
+`[pastebinm]{Pastecode}[/pastebinm]`
+
+
+For larger pastes (42 + lines)
+
+`[pastebinl]{Pastecode}[/pastebinl]`
+
+
+
+
+
+Examples:
+
+
+Smaller Paste:
+
+![Imgur](http://i.imgur.com/AOe4UmT.png)
+
+
+Medium Paste:
+
+![Imgur](http://i.imgur.com/lwBBC9J.png)
+
+
+Larger Paste:
+
+![Imgur](http://i.imgur.com/UAebC3b.png)
+
+
+
+
+
