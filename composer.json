@@ -7,7 +7,7 @@
     },
   "extra": {
         "flarum-extension": {
-            "title": "BBCode Signature",
+            "title": "BBCode Pastebin",
             "icon": {
                 "name": "paste",
                 "backgroundColor": "#000",
